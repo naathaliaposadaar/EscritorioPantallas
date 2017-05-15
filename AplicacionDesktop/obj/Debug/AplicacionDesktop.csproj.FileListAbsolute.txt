@@ -1,0 +1,4 @@
+C:\Users\Francisco\Desktop\SolucionFundacionDesktop\AplicacionDesktop\bin\Debug\AplicacionDesktop.exe.config
+C:\Users\Chopan\Desktop\nnn\SolucionFundacionDesktop\AplicacionDesktop\bin\Debug\AplicacionDesktop.exe.config
+C:\Users\btorresc\Desktop\SolucionFundacionDesktop\SolucionFundacionDesktop\AplicacionDesktop\bin\Debug\AplicacionDesktop.exe.config
+C:\Users\btorresc\Downloads\SolucionFundacionDesktop\SolucionFundacionDesktop\AplicacionDesktop\bin\Debug\AplicacionDesktop.exe.config

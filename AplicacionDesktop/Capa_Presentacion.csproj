@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00B3F5B7-2EBB-4051-8A65-2625D1EAB955}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AplicacionDesktop</RootNamespace>
+    <AssemblyName>AplicacionDesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CRUD\EliminarAportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarAportador.Designer.cs">
+      <DependentUpon>EliminarAportador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EliminarFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarFicha.Designer.cs">
+      <DependentUpon>EliminarFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EliminarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarInventario.Designer.cs">
+      <DependentUpon>EliminarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EliminarMandato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarMandato.Designer.cs">
+      <DependentUpon>EliminarMandato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EliminarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarMedicamento.Designer.cs">
+      <DependentUpon>EliminarMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EliminarResidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarResidente.Designer.cs">
+      <DependentUpon>EliminarResidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EliminarRetiroP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarRetiroP.Designer.cs">
+      <DependentUpon>EliminarRetiroP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EliminarSolicitudM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarSolicitudM.Designer.cs">
+      <DependentUpon>EliminarSolicitudM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarAportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarAportador.Designer.cs">
+      <DependentUpon>IngresarAportador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarMandato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarMandato.Designer.cs">
+      <DependentUpon>IngresarMandato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarRetiroPapelería.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarRetiroPapelería.Designer.cs">
+      <DependentUpon>IngresarRetiroPapelería.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarSolicitudMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarSolicitudMedicamentos.Designer.cs">
+      <DependentUpon>IngresarSolicitudMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarFichas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarFichas.Designer.cs">
+      <DependentUpon>IngresarFichas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarInventario.Designer.cs">
+      <DependentUpon>IngresarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarMedicamentos.Designer.cs">
+      <DependentUpon>IngresarMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarPersonal.Designer.cs">
+      <DependentUpon>IngresarPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarResidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarResidente.Designer.cs">
+      <DependentUpon>IngresarResidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\IngresarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\IngresarUsuario.Designer.cs">
+      <DependentUpon>IngresarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarAportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarAportador.Designer.cs">
+      <DependentUpon>ListarAportador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarFichaResidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarFichaResidente.Designer.cs">
+      <DependentUpon>ListarFichaResidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarInv.Designer.cs">
+      <DependentUpon>ListarInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarMandato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarMandato.Designer.cs">
+      <DependentUpon>ListarMandato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarMedicamento.Designer.cs">
+      <DependentUpon>ListarMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarResidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarResidente.Designer.cs">
+      <DependentUpon>ListarResidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarRetiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarRetiro.Designer.cs">
+      <DependentUpon>ListarRetiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarSM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarSM.Designer.cs">
+      <DependentUpon>ListarSM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ListarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ListarUsuario.Designer.cs">
+      <DependentUpon>ListarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarAportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarAportador.Designer.cs">
+      <DependentUpon>ModificarAportador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarFicha.Designer.cs">
+      <DependentUpon>ModificarFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarInventario.Designer.cs">
+      <DependentUpon>ModificarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarMandato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarMandato.Designer.cs">
+      <DependentUpon>ModificarMandato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarMedicamento.Designer.cs">
+      <DependentUpon>ModificarMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarResidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarResidente.Designer.cs">
+      <DependentUpon>ModificarResidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarRetiroP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarRetiroP.Designer.cs">
+      <DependentUpon>ModificarRetiroP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarSM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarSM.Designer.cs">
+      <DependentUpon>ModificarSM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUD\ModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUD\ModificarUsuario.Designer.cs">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuGenerarReportesG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuGenerarReportesG.Designer.cs">
+      <DependentUpon>MenuGenerarReportesG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuGestionarRetiroP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuGestionarRetiroP.Designer.cs">
+      <DependentUpon>MenuGestionarRetiroP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuAdministrarInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuAdministrarInventario.Designer.cs">
+      <DependentUpon>MenuAdministrarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuConsultarInfoC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuConsultarInfoC.Designer.cs">
+      <DependentUpon>MenuConsultarInfoC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuConsultarRutaD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuConsultarRutaD.Designer.cs">
+      <DependentUpon>MenuConsultarRutaD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuGenerarPlanillaC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuGenerarPlanillaC.Designer.cs">
+      <DependentUpon>MenuGenerarPlanillaC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuGestionarCargosA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuGestionarCargosA.Designer.cs">
+      <DependentUpon>MenuGestionarCargosA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuGestionarMandato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuGestionarMandato.Designer.cs">
+      <DependentUpon>MenuGestionarMandato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuSupervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuSupervisor.Designer.cs">
+      <DependentUpon>MenuSupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuAdminMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuAdminMedicamentos.Designer.cs">
+      <DependentUpon>MenuAdminMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuAdminResidentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuAdminResidentes.Designer.cs">
+      <DependentUpon>MenuAdminResidentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuEnfermera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuEnfermera.Designer.cs">
+      <DependentUpon>MenuEnfermera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuGestionarFichasR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuGestionarFichasR.Designer.cs">
+      <DependentUpon>MenuGestionarFichasR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuEnferSolicitudMed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuEnferSolicitudMed.Designer.cs">
+      <DependentUpon>MenuEnferSolicitudMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuParamedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuParamedico.Designer.cs">
+      <DependentUpon>MenuParamedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuUsuario.Designer.cs">
+      <DependentUpon>MenuUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU\MenuRegistroAportadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU\MenuRegistroAportadores.Designer.cs">
+      <DependentUpon>MenuRegistroAportadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CRUD\EliminarAportador.resx">
+      <DependentUpon>EliminarAportador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EliminarFicha.resx">
+      <DependentUpon>EliminarFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EliminarInventario.resx">
+      <DependentUpon>EliminarInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EliminarMandato.resx">
+      <DependentUpon>EliminarMandato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EliminarMedicamento.resx">
+      <DependentUpon>EliminarMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EliminarResidente.resx">
+      <DependentUpon>EliminarResidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EliminarRetiroP.resx">
+      <DependentUpon>EliminarRetiroP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EliminarSolicitudM.resx">
+      <DependentUpon>EliminarSolicitudM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarAportador.resx">
+      <DependentUpon>IngresarAportador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarMandato.resx">
+      <DependentUpon>IngresarMandato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarRetiroPapelería.resx">
+      <DependentUpon>IngresarRetiroPapelería.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarSolicitudMedicamentos.resx">
+      <DependentUpon>IngresarSolicitudMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarFichas.resx">
+      <DependentUpon>IngresarFichas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarInventario.resx">
+      <DependentUpon>IngresarInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarMedicamentos.resx">
+      <DependentUpon>IngresarMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarResidente.resx">
+      <DependentUpon>IngresarResidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\IngresarUsuario.resx">
+      <DependentUpon>IngresarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarAportador.resx">
+      <DependentUpon>ListarAportador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarFichaResidente.resx">
+      <DependentUpon>ListarFichaResidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarInv.resx">
+      <DependentUpon>ListarInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarMandato.resx">
+      <DependentUpon>ListarMandato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarMedicamento.resx">
+      <DependentUpon>ListarMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarResidente.resx">
+      <DependentUpon>ListarResidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarRetiro.resx">
+      <DependentUpon>ListarRetiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarSM.resx">
+      <DependentUpon>ListarSM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ListarUsuario.resx">
+      <DependentUpon>ListarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarAportador.resx">
+      <DependentUpon>ModificarAportador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarFicha.resx">
+      <DependentUpon>ModificarFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarInventario.resx">
+      <DependentUpon>ModificarInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarMandato.resx">
+      <DependentUpon>ModificarMandato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarMedicamento.resx">
+      <DependentUpon>ModificarMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarResidente.resx">
+      <DependentUpon>ModificarResidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarRetiroP.resx">
+      <DependentUpon>ModificarRetiroP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarSM.resx">
+      <DependentUpon>ModificarSM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUD\ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuGenerarReportesG.resx">
+      <DependentUpon>MenuGenerarReportesG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuGestionarRetiroP.resx">
+      <DependentUpon>MenuGestionarRetiroP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuAdministrarInventario.resx">
+      <DependentUpon>MenuAdministrarInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuConsultarInfoC.resx">
+      <DependentUpon>MenuConsultarInfoC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuConsultarRutaD.resx">
+      <DependentUpon>MenuConsultarRutaD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuGenerarPlanillaC.resx">
+      <DependentUpon>MenuGenerarPlanillaC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuGestionarCargosA.resx">
+      <DependentUpon>MenuGestionarCargosA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuGestionarMandato.resx">
+      <DependentUpon>MenuGestionarMandato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuRegistroAportadores.resx">
+      <DependentUpon>MenuRegistroAportadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuSupervisor.resx">
+      <DependentUpon>MenuSupervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuAdminMedicamentos.resx">
+      <DependentUpon>MenuAdminMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuAdminResidentes.resx">
+      <DependentUpon>MenuAdminResidentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuEnfermera.resx">
+      <DependentUpon>MenuEnfermera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuGestionarFichasR.resx">
+      <DependentUpon>MenuGestionarFichasR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuEnferSolicitudMed.resx">
+      <DependentUpon>MenuEnferSolicitudMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuParamedico.resx">
+      <DependentUpon>MenuParamedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU\MenuUsuario.resx">
+      <DependentUpon>MenuUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
